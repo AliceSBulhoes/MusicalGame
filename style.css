@@ -1,0 +1,95 @@
+
+body{
+    background-image: linear-gradient(to bottom,white,#366198);
+}
+.header{
+    overflow: hidden;
+    padding: 20px 10px ;
+    background-color:white;
+    box-shadow: 1px 1px 1px #366198,
+                0 0 10px #366198,
+                0 0 20px #366198,
+                0 0 30px #366198 ;
+    
+}
+.header a{
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Popins', sans-serif;
+
+}
+.header a.logo{
+    font-size: 25px;
+    font-family: 'Popins', sans-serif;
+    font-style: normal;
+}
+.header-dir{
+    float: right;
+}
+.header-dir a:hover{
+    background-color: #366198;
+    color: white;
+    box-shadow: 1px 1px 1px #366198,
+                0 0 5px #366198,
+                0 0 10px #366198 ;
+}
+.header-dir a#active{
+    background-color: #7da5da;
+    color: white;
+    box-shadow: 1px 1px 1px #366198,
+                0 0 5px #366198,
+                0 0 10px #366198;
+}
+
+ul {
+    background-color:rgb(108, 148, 235);
+    padding: 20px;
+    height: 1000px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px black,
+                0 0 5px black,
+                0 0 10px white;
+    font-family: 'Popins', sans-serif;
+  }
+  li{
+    background-color: aliceblue;
+    text-align: center;
+    list-style-type: none;
+    box-shadow: 1px 1px 1px black,
+                0 0 2px black,
+                0 0 3px black;
+    border-radius: 4px;
+    font: 20px;
+  }
+  h2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'Popins', sans-serif;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 1px 1px 1px black,
+                0 0 2px black,
+                0 0 3px black;
+  }
+  table{
+    width: 100%;
+    margin-left: 1%;
+    text-align: center;
+  }
+#fim{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
