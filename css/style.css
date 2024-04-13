@@ -5,6 +5,9 @@
 body{
     font-family: "Inria Sans", sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .header {
     display: flex;
     background-color: #DDE4ED;
@@ -13,6 +16,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     color: black;
+    width: 100%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 .header a{
@@ -39,9 +43,14 @@ body{
     background-color: #CBDFEA ;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
+.cards_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .card_home{
     padding: 50px;
-    margin: 40px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,23 +58,25 @@ body{
     background-color: #DDE4ED;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
+    width: fit-content;
 }
 .card_home h2{
-    text-align: center;
     background-color: #CBDFEA ;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
-    width: 400px;
+    width: fit-content;
     padding: 20px;
     border-radius: 15px;
+    text-align: center;
 }
 .lista{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    gap: 0.5em;
     justify-content: space-around;
-    margin: 30px;
+    width: 100%;
     font-size: 18px;
+    flex-direction: row;
+    align-items: center;
 }
 .item {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
@@ -73,9 +84,26 @@ body{
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
+    max-width: 300px;
+    transition: transform 1s;
+}
+.item:hover{
+    transform: scale(1.1);
+}
+.item a{
+    color: black;
+}
+.item a:hover{
+    background-color: #90bdd4c5;
 }
 footer{
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
+}
+.colunas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
